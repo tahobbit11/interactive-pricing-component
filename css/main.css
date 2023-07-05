@@ -83,6 +83,212 @@
   /* ==========================================================================
      Author's custom styles
      ========================================================================== */
+     /* Basic Styles */
+      html {
+        font-size: 15px;
+      }
+
+      body {
+        font-family: 'Manrope', sans-serif;
+        background-color: hsl(230, 100%, 99%);
+        min-height: 100vh;
+        text-align: center;
+        width: 100%;
+      }
+
+      h1,
+      h2,
+      h3,
+      p {
+        margin: 0;
+      }
+
+      .content-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+     /* Header styles */
+      header {
+        background-color: hsl(224, 65%, 95%);
+        background-image: url(../images/pattern-circles.svg);
+        background-repeat: no-repeat;
+        background-position: top 17% center;
+        width: 100%;
+        border-radius: 0 0 0 50%;
+        padding: 100px 0 350px 0;
+      }
+
+      .header-content h2{
+        color: hsl(227, 35%, 25%);
+      }
+
+      .header-content p {
+        color: hsl(225, 20%, 60%);
+      }
+
+     /* Main Styles */
+     main {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+     }
+
+     .content-wrapper {
+      background-color: white;
+      width: 337.5px;
+      position: absolute;
+      top: 300px;
+      border-radius: 20px;
+     }
+
+     .interactive-wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px 10px;
+     }
+
+     .interactive-wrapper p {
+      color: hsl(225, 20%, 60%);
+     }
+
+     .scroll {
+      width: 300px;
+      height: 8px;
+      cursor: grab;
+      padding: 20px 0;
+     }
+
+     input[type="range"] {
+      background-color: hsl(174, 86%, 45%);
+     }
+
+     .cost-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-bottom: 40px;
+     }
+
+     #monthly-cost {
+      padding-right: 5px;
+      color: hsl(227, 35%, 25%);
+     }
+
+     .toggle-container {
+      width: 286px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 20px;
+     }
+
+     .toggle-container p {
+      font-size: 1em;
+     }
+
+     .toggle-container p:nth-last-of-type(1){
+      padding-right: 24px;
+     }
+
+     .toggle-container p:nth-last-of-type(2){
+      padding-left: 12px;
+     }
+
+     input[type="checkbox"].toggle {
+      position: absolute;
+      left: -9000px;
+      top: -9000px;
+      display: flex;
+    }
+
+     input[type="checkbox"].toggle::before {
+      position: absolute;
+      left: 9149px;
+      top: 9176px;
+      content: "";
+      width: 42px;
+      height: 21px;
+      background-color: hsl(223, 50%, 87%);
+      border-radius: 1em;
+      transition: background-color 200ms ease-in-out;
+      cursor: pointer;
+     }
+
+     input[type="checkbox"].toggle::after {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      content: "";
+      font-size: .5em;
+      height: .9em;
+      left: 9152px;
+      top: 9179px;
+      width: 1.8em;
+      height: 1.8em;
+      background-color: white;
+      border-radius: 1em;
+      transition: background-color 200ms ease-in-out, transform 200ms ease-in-out;
+      cursor: pointer;
+     }
+    
+    input[type="checkbox"].toggle:checked::before {
+      background-color: hsl(174, 86%, 45%);
+    }
+    
+    input[type="checkbox"].toggle:checked::after {
+      transform: translateX(150%);
+      background-color: white;
+    }
+
+     #discount {
+      position: absolute;
+      background-color: hsl(14, 92%, 95%);
+      color: hsl(15, 100%, 70%);
+      border-radius: 10px;
+      padding: 2px;
+      right: 7px;
+     }
+
+     .divider {
+      width: 100%;
+      border: 1px solid hsl(224, 65%, 95%);
+     }
+
+     .text-content {
+      display: flex;
+      flex-direction: column;
+      padding-top: 20px;
+     }
+
+     .text-content div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 10px;
+     }
+
+     .text-content div img {
+      padding-right: 10px;
+     }
+
+     .text-content div p {
+      color: hsl(225, 20%, 60%);
+     }
+
+     .trial-button {
+      border: none;
+      background-color: hsl(227, 35%, 25%);
+      color: hsl(225, 20%, 60%);
+      border-radius: 50px;
+      padding: 15px 45px;
+      margin: 20px;
+      cursor: pointer;
+     }
   
   /* ==========================================================================
      Helper classes
