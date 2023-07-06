@@ -161,7 +161,7 @@
       cursor: grab;
       padding: 20px 0;
      }
-
+     /*
      input[type="range"] {
       background-color: hsl(174, 86%, 45%);
      }
@@ -183,7 +183,7 @@
       border: none;
       background: transparent;
     }
-
+    */
      .cost-container {
       display: flex;
       align-items: center;
