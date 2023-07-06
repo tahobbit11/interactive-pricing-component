@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/interactive-pricing-component-k77QXNNpdr](https://www.frontendmentor.io/solutions/interactive-pricing-component-k77QXNNpdr)
+- Live Site URL: [https://tahobbit11.github.io/interactive-pricing-component/](https://tahobbit11.github.io/interactive-pricing-component/)
 
 ## My process
 
