@@ -166,6 +166,24 @@
       background-color: hsl(174, 86%, 45%);
      }
 
+     input[type=”range”]::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      height: 20px;
+      width: 20px;
+      border-radius: 50%;
+      background: #ff4500;
+      cursor: ew-resize;
+      box-shadow: 0 0 2px 0 #555;
+      transition: background .3s ease-in-out;
+    }
+
+    input[type=range]::-webkit-slider-runnable-track  {
+      -webkit-appearance: none;
+      box-shadow: none;
+      border: none;
+      background: transparent;
+    }
+
      .cost-container {
       display: flex;
       align-items: center;
@@ -373,8 +391,110 @@
      Modify as content requires.
      ========================================================================== */
   
-  @media only screen and (min-width: 35em) {
+  @media only screen and (min-width: 768px) {
     /* Style adjustments for viewports that meet the condition */
+    /* width 542*/
+
+    header {
+      padding: 110px 0 270px 0;
+      background-position: top 22% center;
+    }
+
+    .content-wrapper {
+      width: 542px;
+      top: 250px;
+    }
+
+    .interactive-wrapper {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      padding: 60px 40px 40px 40px;
+     }
+
+     #view {
+      padding-bottom: 130px;
+      font-size: 1.2em;
+      font-weight: 800;
+     }
+
+    .scroll {
+      width: 450px;
+      position: absolute;
+      top: 142px;
+      right: 45px;
+    }
+
+    .cost-container {
+      padding-bottom: 130px;
+    }
+
+    #monthly-cost {
+      font-size: 2.2em;
+    }
+
+    #interval {
+      font-size: 1.2em;
+    }
+
+    .toggle-container {
+      width: 100%;
+      padding: 0 100px 20px 87px;
+    }
+
+    .toggle-container p:nth-last-of-type(1){
+      padding-right: 0;
+     }
+
+     .toggle-container p:nth-last-of-type(2){
+      padding-left: 0;
+     }
+
+     input[type="checkbox"].toggle::before {
+      position: absolute;
+      left: 9251px;
+      top: 9236px;
+     }
+
+     input[type="checkbox"].toggle::after {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      content: "";
+      font-size: .5em;
+      height: .9em;
+      left: 9254px;
+      top: 9239px;
+      width: 1.8em;
+      height: 1.8em;
+      background-color: white;
+      border-radius: 1em;
+      transition: background-color 200ms ease-in-out, transform 200ms ease-in-out;
+      cursor: pointer;
+     }
+
+     #discount {
+      border-radius: 10px;
+      padding: 2px;
+      right: 25px;
+     }
+
+     .text-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 45px 20px 45px;
+     }
+
+     .trial-button {
+      width: 170px;
+      height: 40px;
+      margin: 0;
+      padding: 0;
+     }
   }
   
   @media print,

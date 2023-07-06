@@ -3,7 +3,6 @@ let pricingInterval = "month";
 
 const billingIntervals = (price, int) => {
     let costPerYear = (price * 12) * .75;
-    console.log(int)
     if(int === "month") {
         costPerMonth = price;
         return price
@@ -12,6 +11,13 @@ const billingIntervals = (price, int) => {
         price = costPerYear;
         return price
     }
+}
+
+let discountText = document.getElementById("discount");
+if(window.innerWidth >= 768) {
+    discountText.innerHTML = "-25% Discount";
+} else {
+    discountText.innerText = "-25%";
 }
 
 let price = document.getElementById("monthly-cost");
@@ -86,3 +92,11 @@ document.querySelector(".toggle").addEventListener("click", () => {
     }
     priceToggle(pricingInterval);
 })
+
+addEventListener("resize", (e) => {
+    if(window.innerWidth >= 768) {
+        discountText.innerHTML = "-25% Discount";
+    } else {
+        discountText.innerText = "-25%";
+    }
+});
